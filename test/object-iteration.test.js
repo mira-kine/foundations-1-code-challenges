@@ -4,7 +4,7 @@ import {
     makeTuples
 } from '../object-iteration.js';
 
-const { test } = QUnit;
+const { test, skip } = QUnit;
 
 const pet = { 
     name: 'scooter', 
@@ -12,7 +12,7 @@ const pet = {
     type: 'puppy',
 };
 
-test('should return an object with screaming keys', (expect) => {
+skip('should return an object with screaming keys', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = {
@@ -45,7 +45,7 @@ test('should make a string from the keys', (expect) => {
     expect.deepEqual(true, shouldBeTrue);
 });
 
-test('should return tuples', (expect) => {
+skip('should return tuples', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = [
